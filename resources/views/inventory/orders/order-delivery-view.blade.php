@@ -87,7 +87,7 @@ p {font-size:12px !important;}
                             
                             <div style="width:50%;float:left;font-size:8px;">
                             <p style=""><span class="fa fa-caret-right"></span> <strong>Customer:</strong> {{ isset($delivery->salesOrder->user->username) ? $delivery->salesOrder->user->username : "" }}</p>
-                            <p><span class="fa fa-caret-right"></span> <strong>Tel:</strong> {{ isset($delivery->salesOrder->tel) ? $delivery->salesOrder->tel : "" }}</p>                
+                            <p><span class="fa fa-caret-right"></span> <strong>Tel:</strong> {{ isset($delivery->salesOrder->contect_no) ? $delivery->salesOrder->contect_no : "" }}</p>                
                             <p><span class="fa fa-caret-right"></span> <strong>Purchase Date:</strong> {{ Carbon\Carbon::parse(isset($delivery->salesOrder->purchase_date) ?$delivery->salesOrder->purchase_date: "")->format('d/m/Y') }}</p>
                             
                             <p><span class="fa fa-caret-right"></span> <strong>Bill To:</strong> {{ isset($delivery->salesOrder->billing_address->street1) ? $delivery->salesOrder->billing_address->street1 : "" }}{{ isset($delivery->salesOrder->billing_address->street2) ? $delivery->salesOrder->billing_address->street2 : "" }},
